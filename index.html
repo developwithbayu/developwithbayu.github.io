@@ -7,13 +7,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>🐍 Aku Adalah Seorang Python Learner</h1>
-    <p>Belajar. Ngoding. Gagal. Ulang lagi. Tapi makin jago setiap kali.</p>
+  <div class="theme-toggle">
+    <button id="themeBtn" aria-label="Toggle theme">🌙</button>
+  </div>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>🐍 Aku Adalah Seorang Python Learner</h1>
+      <p>Belajar. Ngoding. Gagal. Ulang lagi. Tapi makin jago setiap kali.</p>
+      <a href="#projects" class="btn">Lihat Proyek</a>
+    </div>
   </header>
 
   <main>
-    <section class="projects">
+    <section id="about" class="fade-in">
+      <h2>Tentang Aku</h2>
+      <p>Hai! Aku Bayu — seseorang yang lagi jatuh cinta sama Python 🐍.  
+      Aku suka eksplor hal baru di dunia data, scripting, dan visualisasi.  
+      Kadang koding sambil ngopi, kadang ngopi sambil mikirin bug.</p>
+    </section>
+
+    <section id="projects" class="projects fade-in">
       <h2>🧩 Proyek-ku</h2>
       <div class="project-list">
 
@@ -37,7 +52,11 @@
   </main>
 
   <footer>
-    <p>Dibuat dengan ❤️ dan banyak kopi oleh <a href="https://github.com/bayusedana26" target="_blank">Bayu Sedana</a>.</p>
+    <p>Dibuat dengan ❤️ oleh <a href="https://github.com/bayusedana26" target="_blank">Bayu Sedana</a></p>
+    <div class="socials">
+      <a href="mailto:bayusedana26@gmail.com">📧 Email</a>
+      <a href="https://github.com/bayusedana26" target="_blank">🐙 GitHub</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
